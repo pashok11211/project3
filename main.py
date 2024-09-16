@@ -1,10 +1,13 @@
 from dog import Dog
 from purebred_dog import PurebredDog
 
-if __name__ == "__main__":
-    dog1 = Dog("Бобик", 3, "Белый")
-    print(dog1.bark())
+dog1 = Dog("Бобик", 3, "черный")
+dog2 = PurebredDog("Шарик", 5, "белый", "Пудель")
+print(dog1.bark())
 
-    purebred_dog = PurebredDog("Тузик", 5, "Черный", "Лабрадор")
-    print(purebred_dog.bark())
-    print(purebred_dog.go_to_dog_show())
+print(dog2.bark())
+
+print(dog2.go_to_dog_show())
+
+dog1.age = 4
+print(dog1.bark())
